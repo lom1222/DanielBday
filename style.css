@@ -1,0 +1,241 @@
+html{
+  color : white;
+  background-color:black;
+  height: 95%;
+}
+
+body{
+  height: 100%;
+}
+
+#presentCounterDiv{
+  font-size: 32px;
+  text-align: center;
+  margin-top: 5%;
+  opacity: 0;
+}
+
+#present{
+  height: 70%;
+  text-align: center;
+}
+
+#presentImage{
+  align-self: center;
+  height: 100%;
+  width: auto;
+}
+
+#counterHolder{
+  display: inline-block;
+  position: relative;
+}
+
+#counter{
+
+}
+
+.floatingNumber{
+  transition-duration: 0.5s;
+  color: lime;
+  font-size: 24px;
+  font-family: monospace;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.bigBox{
+  margin: 2px;
+  height: 100%;
+  vertical-align: top;
+  display: inline-block;
+  transition-duration: 2s;
+}
+
+#presentStuff{
+  width: 100%;
+}
+
+#upgradeStuff{
+  width: 25%;
+  border: 1px solid grey;
+  text-align: center;
+  font-size: 32px;
+  padding: 4px;
+  opacity: 0;
+  display: none;
+}
+
+#popUp{
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  height: 70%;
+  width: 50%;
+  background-color: rgb(15,15,30);
+  opacity: 0.95;
+  border-radius: 20px;
+  border: 3px double grey;
+  color: rgb(120,120,120);
+  font-size: 48px;
+  font-weight: bolder;
+  text-align: center;
+  z-index: 1;
+}
+#popUpText{
+  top: 35%;
+  left: 50%;
+  width: 90%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#popUpButton{
+  height: 20%;
+  width: 40%;
+  top: 80%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 3px inset grey;
+  font-size: 60px;
+  color: white;
+  background-color: rgb(30,60,30);
+}
+
+#popUpButton:active{
+  border-style: outset;
+}
+
+.upgrade:hover{
+  border: 3px double rgba(30,30,30,0.8);
+}
+
+.imgHolder{
+ width: 50%;
+ display: inline-block;
+}
+
+.upgradeInfo{
+  display: inline-block;
+  font-size: 24px;
+  text-align: left;
+}
+
+.upgradeImage{
+  width: 100%;
+  height: 100%;
+}
+
+#upgradeHeader{
+  text-decoration: underline;
+}
+
+.strikeThrough{
+  text-decoration: line-through;
+}
+
+.friendAvatar{
+  position: absolute;
+  width: 10%;
+}
+
+#phillipAvatar{
+  top: 10%;
+  left: 10%;
+}
+
+#lizaAvatar{
+  top: 25%;
+  left: 7%;
+}
+
+#ramiAvatar{
+  top: 40%;
+  left: 5%;
+}
+
+#benAvatar{
+  top: 55%;
+  left: 7%;
+}
+
+#andreyAvatar{
+  top: 70%;
+  left: 10%;
+}
+
+#marinaAvatar{
+  top: 75%;
+  left: 30%;
+}
+
+#nikitaAvatar{
+  top: 10%;
+  left: 50%;
+}
+
+#agshayaAvatar{
+  top: 25%;
+  left: 53%;
+}
+
+#annieAvatar{
+  top: 40%;
+  left: 55%;
+}
+
+#katieAvatar{
+  top: 55%;
+  left: 53%;
+}
+
+#pashaAvatar{
+  top: 70%;
+  left: 50%;
+}
+
+#nadiaAvatar{
+  top: 75%;
+  left: 40%;
+}
+
+#sashaAvatar{
+  top: 10%;
+  left: 20%;
+}
+
+#leshaAvatar{
+  top: 10%;
+  left: 40%;
+}
+
+#chickenAvatar{
+  top: 10%;
+  left: 30%;
+}
+
+#dimaAvatar{
+  top: 72%;
+  left: 20%;
+}
+
+#love1Avatar{
+  top: 50%;
+  left: 45%;
+  width: 20%;
+}
+
+#love2Avatar{
+  top: 0%;
+  left: 20%;
+  width: 20%;
+}
+
+#danielAvatar{
+  position: absolute;
+  width: 50%;
+  top: 15%;
+  left: 25%;
+  z-index: 0.5;
+}

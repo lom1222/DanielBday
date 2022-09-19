@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="popUp" id="popUp">
+      <div class="" id="popUpText">
+        HAPPY BIRTHDAY, HERE IS A PRESENT!
+      </div>
+      <button type="button" name="popUpButton" id="popUpButton" onclick="popUpButtonClick()">OK</button>
+    </div>
+    <div hidden class="friendAvatar" id="phillipAvatar">
+      <img src="phillip.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="lizaAvatar">
+      <img src="liza.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="ramiAvatar">
+      <img src="rami.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="benAvatar">
+      <img src="ben.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="andreyAvatar">
+      <img src="andrey.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="marinaAvatar">
+      <img src="marina.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="nikitaAvatar">
+      <img src="nikita.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="agshayaAvatar">
+      <img src="agshaya.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="annieAvatar">
+      <img src="annie.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="katieAvatar">
+      <img src="katie.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="pashaAvatar">
+      <img src="pasha.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="nadiaAvatar">
+      <img src="nadia.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="sashaAvatar">
+      <img src="sasha.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="leshaAvatar">
+      <img src="lesha.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="chickenAvatar">
+      <img src="chicken.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="dimaAvatar">
+      <img src="dima.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="love1Avatar">
+      <img src="love1.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="friendAvatar" id="love2Avatar">
+      <img src="love1.png" alt="" class="upgradeImage">
+    </div>
+    <div hidden class="danielAvatar" id="danielAvatar">
+      <img src="daniel.png" alt="" class="upgradeImage">
+    </div>
+
+    <div class="bigBox" id="presentStuff">
+      <div class="" id="presentCounterDiv">
+        <span id="counterPrefix">Presents:</span> <div id="counterHolder"><span id="counter">0</span></div> <span id="counterSuffix"></span>
+      </div>
+      <div class="" id="present">
+        <img src="present_blue.png" alt="A very nice picture of a blue present" id="presentImage" onmousedown="presentDown()" onmouseup="presentUp()" onclick="presentClick()">
+      </div>
+    </div>
+    <div class="bigBox" id="upgradeStuff">
+      <div id="upgradeHeader">
+        ???
+      </div>
+      <div id="upgradeList">
+        <div class="upgrade" id="phillipUpgrade" onclick="phillipUpgrade()">
+          <div class="imgHolder">
+            <img src="phillip.png" alt="FILLUP" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Phil UP
+            </div>
+            <div class="upgradeCost">
+              10 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="colaUpgrade" onclick="colaUpgrade()">
+          <div class="imgHolder">
+            <img src="pepsi.png" alt="FILLUP" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              BEBSI
+            </div>
+            <div class="upgradeCost">
+              20 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="lizaUpgrade" onclick="lizaUpgrade()">
+          <div class="imgHolder">
+            <img src="liza.png" alt="LISA" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              LEZBTMKND
+            </div>
+            <div class="upgradeCost">
+              30 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="quirkyUpgrade" onclick="quirkyUpgrade()">
+          <div class="imgHolder">
+            <img src="quirky.png" alt="QUIRKY" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              QuiRkY
+            </div>
+            <div class="upgradeCost">
+              50 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="ramiUpgrade" onclick="ramiUpgrade()">
+          <div class="imgHolder">
+            <img src="rami.png" alt="RAMI" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              RAMICHKA
+            </div>
+            <div class="upgradeCost">
+              50 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="tulipUpgrade" onclick="tulipUpgrade()">
+          <div class="imgHolder">
+            <img src="tulip.png" alt="TULIP" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              flower
+            </div>
+            <div class="upgradeCost">
+              70 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="benUpgrade" onclick="benUpgrade()">
+          <div class="imgHolder">
+            <img src="ben.png" alt="JEW" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Jew
+            </div>
+            <div class="upgradeCost">
+              100 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="shawarmaUpgrade" onclick="shawarmaUpgrade()">
+          <div class="imgHolder">
+            <img src="shawarma.png" alt="shawarma" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Good food
+            </div>
+            <div class="upgradeCost">
+              150 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="andreyUpgrade" onclick="andreyUpgrade()">
+          <div class="imgHolder">
+            <img src="andrey.png" alt="andrey" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Sergeivitch
+            </div>
+            <div class="upgradeCost">
+              100 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="basementUpgrade" onclick="basementUpgrade()">
+          <div class="imgHolder">
+            <img src="basement.png" alt="basement" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              basement
+            </div>
+            <div class="upgradeCost">
+              200 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="marinaUpgrade" onclick="marinaUpgrade()">
+          <div class="imgHolder">
+            <img src="marina.png" alt="marina" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Marina
+            </div>
+            <div class="upgradeCost">
+              250 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="ukraineUpgrade" onclick="ukraineUpgrade()">
+          <div class="imgHolder">
+            <img src="ukraine.png" alt="ukraine" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Слава Україні!
+            </div>
+            <div class="upgradeCost">
+              300 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="nikitaUpgrade" onclick="nikitaUpgrade()">
+          <div class="imgHolder">
+            <img src="nikita.png" alt="nikita" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Depressed man
+            </div>
+            <div class="upgradeCost">
+              400 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="bookUpgrade" onclick="bookUpgrade()">
+          <div class="imgHolder">
+            <img src="book.png" alt="book" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              CS lewis literature
+            </div>
+            <div class="upgradeCost">
+              500 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="agshayaUpgrade" onclick="agshayaUpgrade()">
+          <div class="imgHolder">
+            <img src="agshaya.png" alt="agshaya" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Agshaya
+            </div>
+            <div class="upgradeCost">
+              600 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="pinkUpgrade" onclick="pinkUpgrade()">
+          <div class="imgHolder">
+            <img src="pink.png" alt="pink" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              PINK
+            </div>
+            <div class="upgradeCost">
+              750 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="annieUpgrade" onclick="annieUpgrade()">
+          <div class="imgHolder">
+            <img src="annie.png" alt="annie" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Annie
+            </div>
+            <div class="upgradeCost">
+              900 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="katieUpgrade" onclick="katieUpgrade()">
+          <div class="imgHolder">
+            <img src="katie.png" alt="katie" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Katie
+            </div>
+            <div class="upgradeCost">
+              900 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="pashaUpgrade" onclick="pashaUpgrade()">
+          <div class="imgHolder">
+            <img src="pasha.png" alt="pasha" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              PASHA
+            </div>
+            <div class="upgradeCost">
+              1000 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="philosophyUpgrade" onclick="philosophyUpgrade()">
+          <div class="imgHolder">
+            <img src="philosophy.png" alt="philosophy" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Heideger
+            </div>
+            <div class="upgradeCost">
+              1200 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="nadiaUpgrade" onclick="nadiaUpgrade()">
+          <div class="imgHolder">
+            <img src="nadia.png" alt="nadia" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Nadia
+            </div>
+            <div class="upgradeCost">
+              1250 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="sashaUpgrade" onclick="sashaUpgrade()">
+          <div class="imgHolder">
+            <img src="sasha.png" alt="sasha" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Sasha
+            </div>
+            <div class="upgradeCost">
+              1500 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="leshaUpgrade" onclick="leshaUpgrade()">
+          <div class="imgHolder">
+            <img src="lesha.png" alt="lesha" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Lesha
+            </div>
+            <div class="upgradeCost">
+              2000 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="chickenUpgrade" onclick="chickenUpgrade()">
+          <div class="imgHolder">
+            <img src="chicken.png" alt="chicken" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Chicken
+            </div>
+            <div class="upgradeCost">
+              2000 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="dimaUpgrade" onclick="dimaUpgrade()">
+          <div class="imgHolder">
+            <img src="dima.png" alt="dima" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Dima
+            </div>
+            <div class="upgradeCost">
+              2000 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="pushupsUpgrade" onclick="pushupsUpgrade()">
+          <div class="imgHolder">
+            <img src="pushups.png" alt="pushups" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Pushups
+            </div>
+            <div class="upgradeCost">
+              2500 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="tropinkaUpgrade" onclick="tropinkaUpgrade()">
+          <div class="imgHolder">
+            <img src="tropinka.png" alt="tropinka" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              Tropinka
+            </div>
+            <div class="upgradeCost">
+              3000 Presents
+            </div>
+          </div>
+        </div>
+
+        <div hidden class="upgrade" id="presentUpgrade" onclick="presentUpgrade()">
+          <div class="imgHolder">
+            <img src="present.png" alt="present" class="upgradeImage">
+          </div>
+          <div class="upgradeInfo">
+            <div class="upgradeName">
+              An actual present
+            </div>
+            <div class="upgradeCost">
+              5000 Presents
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script type="text/javascript" src="danielBday.js"></script>
+  </body>
+</html>
